@@ -1,0 +1,592 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 100;
+    font-style: normal;
+
+}
+body{
+    scroll-behavior: smooth;
+}
+
+:root {
+    --white-background: rgba(223, 216, 216, 0.26);
+    --blue-contrast: rgb(45, 45, 143);
+
+}
+
+.nav{
+    height: 260px;
+    width: 100%;
+    background-color: var(--blue-contrast);
+    /* padding: 10 10px 0px 10px; */
+    color: white;
+   
+
+}
+.nav h1{
+    display: none;
+    font-family: 50px;
+    margin: auto;
+    font-weight: bold;
+    height: 30px;
+    width: 100%;
+    
+}
+
+
+.navbars {
+
+    width: 100%;
+    display: flex;
+    align-content: center;
+    padding: 20px; 
+    background-color: var(--blue-contrast);
+}
+
+.nav1 {
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    font-weight: bold;
+    align-items: center;
+}
+
+
+.nav1 a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    padding: 10px;
+    border-radius: 20px;
+    transition: 300ms linear;
+}
+
+.nav a:hover {
+    background-color: var(--white-background);
+    color: white;
+
+}
+#dropdown button{
+      background-color: var(--blue-contrast);
+      color: whitesmoke;
+      display: none;
+      
+
+}
+.nav1 h2 {
+    font-weight: bolder;
+    font-size: 40px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#navbtn{
+    border-radius: 20px;
+}
+
+
+
+.nav2 {
+    width: 50%;
+    display: flex;
+    justify-content:space-around;
+    font-weight: bold;
+    align-items: center;
+   
+
+}
+
+.info {
+    background-color: rgb(58, 55, 247);
+    border-radius: 25px;
+    padding: 10px;
+    transition: 300ms linear;
+
+}
+
+.info:hover {
+    background-color: white;
+
+    color: black;
+
+
+}
+
+.nav2 div {
+    margin-right: 30px;
+    font-weight: bold;
+    font: 20px;
+    padding: 10px;
+    transition: 300ms linear;
+    
+}
+.nav2 div:hover{
+    background-color: rgb(216, 211, 211);
+    border-radius: 20px;
+
+    color: black;
+
+}
+
+#line1 {
+    margin: 0;
+    height: 1px;
+    width: 100%;
+    border: 1px solid var(--white-background);
+}
+
+.book {
+
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: end;
+    text-indent: 50px;
+
+}
+
+.bookdetails {
+    height: 100px;
+    width: 90%;
+    background-color: white;
+    position: relative;
+    top: 2px;
+    color: rgb(98, 98, 201);
+    display: flex;
+    align-items: center;
+
+    margin: auto;
+    border-radius: 10px 10px 0px 0px;
+
+}
+
+.bookdetails a {
+    font-size: 20px !important;
+    font-weight: bold;
+    text-decoration: none;
+
+}
+
+.bookdetails a:hover {
+    background-color: transparent;
+    color: var(--blue-contrast);
+}
+
+.flight {
+    width: 90%;
+    height: 100px;
+    margin: auto;
+    background-color: white;
+    display: flex;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 5px 0px 10px gray;
+    justify-content: space-evenly;
+    align-items: center;
+    color: var(--blue-contrast);
+}
+
+.flight input {
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid var(--white-background);
+    text-align: center;
+}
+.flight .searchflight{
+      
+      color: whitesmoke;
+      padding: 10px;
+      transition: 300ms;
+}
+.flight .searchflight:hover{
+    background-color: var(--white-background) !important;
+    color: blue !important;
+}
+
+
+.flight i {
+    font-size: 20px;
+    border-radius: 1000px;
+    background-color: var(--white-background);
+    padding: 10px;
+    color: blue;
+}
+
+.flight button {
+    border-radius: 15px;
+    padding: 5px;
+    background-color: var(--blue-contrast);
+    border-radius: 35px;
+    color: white;
+    font-weight: 600;
+    border: none;
+
+}
+
+.flight button i {
+    border-radius: none;
+    background-color: transparent;
+}
+
+.aminities {
+    display: flex;
+    margin: auto;
+
+    color: var(--blue-contrast);
+    width: 90%;
+    height: 150px;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.item a {
+    font-weight: 500;
+    font-size: 14px;
+    text-decoration: none;
+    color: var(--blue-contrast);
+}
+
+.item i {
+
+    color: blue;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 1000px;
+    background-color: var(--white-background);
+}
+
+.image11 {
+    height: 610px;
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 400px 1fr;
+    column-gap: 20px;
+    border-radius: 20px;
+
+}
+
+.img1{
+    
+    border-radius: 20px 20px 0px 0px;
+
+}
+
+.img1 img {
+    width: 607px;
+    height: 400px;
+    border-radius: 20px 20px 0px 0px;
+
+
+}
+
+.image11 .img2 img {
+    width: 608px;
+    height: 400px;
+    border-radius: 20px 20px 0px 0px;
+
+}
+
+.img2 {
+
+    border-radius: 20px 20px 0px 0px;
+
+}
+
+.img3 {
+    border-radius: 0px 0px 20px 20px;
+    color: white;
+    background-color: var(--blue-contrast);
+    padding: 20px;
+}
+
+.img3 p::first-letter {
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+}
+
+.img4 p::first-letter {
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+}
+
+.img4 {
+    border-radius: 0px 0px 20px 20px;
+    color: white;
+    background-color: orange;
+    padding: 20px;
+}
+
+.image11 button {
+    border: 1px solid;
+    width: 150px;
+    border-radius: 20px;
+
+   
+    padding: 10px;
+   
+
+}
+
+.exp {
+    height: 150px;
+    width: 95%;
+
+    display: flex;
+    justify-content: center;
+   
+    gap: 10px;
+    margin: auto;
+    color: var(--blue-contrast);
+    
+
+
+}
+
+.one,
+.two {
+    height: 150px;
+    width: 50%;
+    display: flex;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--white-background);
+    border-radius: 20px;
+    gap: 10px;
+    padding: 20px;
+
+}
+
+.icon1,
+.arrow1 {
+    font-size: 40px;
+}
+.landscape{
+    height:200px;
+    width: 100%;
+    display: flex;
+    padding: 20px;
+ 
+    
+    
+   
+    justify-content:center;
+
+   
+}
+.landscape button{
+    border-radius: 20px;
+}
+.landscape img{
+    height: 350px;
+    width: 1000px;
+    border-radius: 10px 0px 0px 10px ;
+}
+.landscape .one1{
+    height: 350px;
+    width: 70%;
+}
+.landscape .two1{
+    height: 350px;
+    width: 30%;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+    background-color: var(--blue-contrast);
+    color: white;
+    padding: 20px;
+    border-radius: 0px 10px 10px 0px;
+   
+}
+.ticket-check{
+    height: 600px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 200px;
+    border: 1px solid black;
+    padding: 20px;
+
+}
+.counter{
+    width: 60%;
+    padding: 30px;
+    color: var(--blue-contrast);
+    font-size: 20px;
+    font-weight: 300;
+}
+.counter img{
+    height:400px;
+    width: 700px;
+    border-radius: 20px;
+}
+.rules{
+    padding: 20px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    color: var(--blue-contrast);
+
+}
+.rules i{
+    font-size: 30px;
+    color: blue;
+}
+.rules button{
+    margin-left:20%;
+}
+.rules p{
+    font-size: 20px;
+    font-weight: 300;
+}
+.lp2{
+    position: relative;
+    top:  250px;
+    
+   
+} 
+.dup{
+    position: relative;
+    top: 500px;
+   
+  
+   
+}
+.slide{
+    position: relative;
+    top: 600px;
+    padding: 50px;
+}
+.slide img{
+    max-height: 450px;
+    width: 80%;
+    border-radius: 20px;
+}
+.ftr{
+    height: 430px;
+    width: 98%;
+    background-color: rgb(144, 69, 214);
+    position: relative;
+    top: 600px;
+    margin: auto;
+    padding: 20px;
+
+    border-radius: 20px;
+    
+}
+.cnt1 .one,.two{
+    background-color: transparent;
+}
+.cnt1  a{
+    text-decoration: none;
+    color: whitesmoke;    
+
+} 
+
+.one2,.two2, dt{
+   
+    font-size: 20px;
+    color: whitesmoke;
+}
+.ftr h1{
+    color: var(--blue-contrast);
+}
+.cnt1{
+    display: flex;
+    justify-content: start;
+}
+.cnt1 .one,.two,.three {
+    width: 500px;
+}
+.ftr-icon{
+    height: 50px;
+    width: 100px;
+margin-left: 80%;
+ 
+   display: flex;
+   justify-content: center;
+    
+
+}
+.ftr-icon div{
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    
+
+}
+
+.ftr-icon i{
+    font-size: 30px;
+    padding: 20px;
+    
+}
+.fb{
+    color: blue;
+}
+.x{
+    color: black;
+}
+.wts{
+    color: green;
+}
+.snap{
+    color: yellow;
+}
+.insta{
+    color: purple;
+}
+.ftr span{
+    font-size: 15px;
+    color: black;
+    font-weight: 300;
+
+}
+@media  only screen  and (max-width:720px) and (min-width:360px){
+     .nav h1{
+       
+        display: flex;
+    align-items: center;
+    justify-content: center;
+
+     }
+    .navbar{
+        display: flex;
+        flex-flow: column;
+     }
+    
+    .nav1,.nav2{
+        display: none;
+    }
+    #dropdown button{
+        display: inline;
+      
+    }
+    .bookdetails,.flight,.aminities{
+      flex-flow: column wrap;
+
+    }
+    .bookdetails{
+        display: flex;
+        flex-flow: column wrap;
+        height: fit-content;
+    }
+    .image11 .img1,.img2{
+        display: none;
+    }
+    .exp{
+        display: flex;
+         flex-flow: column wrap;
+    
+    }
+
+}
